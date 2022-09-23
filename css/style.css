@@ -1,0 +1,17 @@
+:root {
+    --offcanvas-width: 270px;
+    --topNavHeight: 56px;
+}
+
+.sidebar-nav {
+    width: var(--offcanvas-width) !important;
+}
+
+@media (min-width: 992px) {
+    .sidebar-nav {
+        transform: none !important;
+        visibility: visible !important;
+        top: var(--topNavHeight) !important;
+        height: calc(100% - var(--topNavHeight)) !important;
+    }
+}
